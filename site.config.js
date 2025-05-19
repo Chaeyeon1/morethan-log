@@ -25,7 +25,7 @@ const CONFIG = {
 
   // CONFIG configration (required)
   link: "https://morethan-log.vercel.app",
-  // since: 2025, // If leave this empty, current year will be used.
+  since: 2025, // If leave this empty, current year will be used.
   lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "/유치원 몰티즈.jpeg", // The link to generate OG image, don't end with a slash
 
