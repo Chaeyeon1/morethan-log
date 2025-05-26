@@ -61,8 +61,6 @@ const CONFIG = {
       "issue-term": "og:title",
       label: "Chae-log",
       theme: "photon-dark",
-      crossorigin: "anonymous",
-      async: true,
     },
   },
   cusdis: {
