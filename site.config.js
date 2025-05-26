@@ -12,8 +12,12 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `🐹 vvony.log`,
+      href: "https://jivvon-log.vercel.app",
+    },
+    {
+      name: `😇 saelog`,
+      href: "https://amaran-th.github.io/",
     },
   ],
   // blog setting (required)
