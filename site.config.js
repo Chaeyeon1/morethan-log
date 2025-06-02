@@ -24,7 +24,7 @@ const CONFIG = {
   blog: {
     title: "Chaeyeon-log",
     description: "welcome to Chaeyeon-log!",
-    scheme: "light", // 'light' | 'dark' | 'system'
+    scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
@@ -64,7 +64,6 @@ const CONFIG = {
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
       label: "Chae-log",
-      theme: "photon-dark",
     },
   },
   cusdis: {
