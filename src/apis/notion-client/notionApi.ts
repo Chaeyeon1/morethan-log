@@ -26,10 +26,18 @@ const unwrapRecordMap = (recordMap: any) => {
   })
 }
 
+// Notion 이 got 의 기본 User-Agent("got (https://github.com/sindresorhus/got)")를 403 으로 막는다.
+const USER_AGENT =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36"
+
 export class NormalizedNotionAPI extends NotionAPI {
   async fetch<T>(args: Parameters<NotionAPI["fetch"]>[0]): Promise<T> {
-    const response: any = await super.fetch<T>(args)
+    const response: any = await super.fetch<T>({
+      ...args,
+      headers: { "user-agent": USER_AGENT, ...args.headers },
+    })
     unwrapRecordMap(response?.recordMap)
+    unwrapRecordMap(response?.recordMapWithRoles)
     return response
   }
 }
